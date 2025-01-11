@@ -7,7 +7,7 @@ import SeparatorWithOr from '@/components/shared/separator-or'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 import CredentialsSignInForm from './credentials-signin-form'
-// import { GoogleSignInForm } from './google-signin-form'
+import { GoogleSignInForm } from './google-signin-form'
 import { Button } from '@/components/ui/button'
 import { getSetting } from '@/lib/actions/setting.actions'
 
@@ -41,7 +41,7 @@ export default async function SignInPage(props: {
             <CredentialsSignInForm />
             <SeparatorWithOr />
             <div className='mt-4'>
-              {/* <GoogleSignInForm /> */}
+              <GoogleSignInForm />
             </div>
           </div>
         </CardContent>
