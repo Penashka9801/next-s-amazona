@@ -1255,7 +1255,7 @@ We also provide helpful resources such as order tracking, product guides, and FA
         description:
           'NxtAmzn is a sample Ecommerce website built with Next.js, Tailwind CSS, and MongoDB.',
         keywords: 'Next Ecommerce, Next.js, Tailwind CSS, MongoDB',
-        url: 'https://akyolexpress.vercel.app',
+        url: 'https://akyolexpress.vercel.app/',
         logo: '/icons/logo.svg',
         slogan: 'Spend less, enjoy more.',
         author: 'Next Ecommerce',
