@@ -10,7 +10,7 @@
 | Authentication | Auth.js, Google Auth, Magic Link |
 | Others         | uploadthing, resend, zod, etc    |
 
-[![Next.js MongoDB Amazona](/public/images/app.png)](https://next-mongo-ecommerce-final.vercel.app/)
+
 
 ## Watch Video Tutorial
 
@@ -18,7 +18,7 @@
 
 ## View Demo Website
 
-https://next-mongo-ecommerce-final.vercel.app/
+
 
 ## What you will learn
 

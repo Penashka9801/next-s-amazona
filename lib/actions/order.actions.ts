@@ -64,15 +64,25 @@ export const createOrderFromCart = async (
 
 export async function updateOrderToPaid(orderId: string) {
   try {
+    
+    console.log('Connecting to database...');
     await connectToDatabase()
     const order = await Order.findById(orderId).populate<{
       user: { email: string; name: string }
     }>('user', 'name email')
-    if (!order) throw new Error('Order not found')
+    if (!order) 
+      {
+        console.log('Order not found')
+        throw new Error('Order not found')
+      }
+      console.log(`Finding order with ID: ${orderId}`);
     if (order.isPaid) throw new Error('Order is already paid')
-    order.isPaid = true
-    order.paidAt = new Date()
-    await order.save()
+    order.isPaid = true;
+    order.paidAt = new Date();
+    console.log('Saving order...');
+    await order.save();
+
+    console.log('Order saved, updating product stock...');
     if (!process.env.MONGODB_URI?.startsWith('mongodb://localhost'))
       await updateProductStock(order._id)
     if (order.user.email) await sendPurchaseReceipt({ order })

@@ -32,6 +32,8 @@ export default function StripeForm({
 
     if (stripe == null || elements == null || email == null) return
 
+    console.log('Return URL:', `${site.url}/checkout/${orderId}/stripe-payment-success`)
+
     setIsLoading(true)
     stripe
       .confirmPayment({

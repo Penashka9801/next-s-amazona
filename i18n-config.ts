@@ -3,6 +3,7 @@ export const i18n = {
     { code: 'en-US', name: 'English', icon: '🇺🇸' },
     { code: 'fr', name: 'Français', icon: '🇫🇷' },
     { code: 'ar', name: 'العربية', icon: '🇸🇦' },
+    { code: 'tkm', name: 'Türkmen', icon: '🇹🇲'}
   ],
   defaultLocale: 'en-US',
 }
