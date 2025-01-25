@@ -2,12 +2,15 @@ import { HelpCircle } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-
+import { useTranslations } from 'next-intl'
 export default function CheckoutLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
+}) 
+
+{
+  const t = useTranslations('Checkout')
   return (
     <div className='p-4'>
       <header className='bg-card mb-4 border-b'>
@@ -25,7 +28,7 @@ export default function CheckoutLayout({
             />
           </Link>
           <div>
-            <h1 className='text-3xl'>Checkout</h1>
+          <h1 className='text-3xl'>{t('title')}</h1> {/* Используем перевод */}
           </div>
           <div>
             <Link href='/page/help'>

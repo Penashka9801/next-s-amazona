@@ -209,5 +209,11 @@
     "Status": "Status",
     "Actions": "Hereketler",
     "Details": "Maglumatlar"
+  },
+  "Checkout": {
+    "title": "Sargyt sahypa"
+  },
+  "Checkout_form" :{
+    "Ship to this address" : "Šu salga ugradyñ"
   }
 }

@@ -39,17 +39,20 @@ import Link from 'next/link'
 import useCartStore from '@/hooks/use-cart-store'
 import useSettingStore from '@/hooks/use-setting-store'
 import ProductPrice from '@/components/shared/product/product-price'
+import { useTranslations } from 'next-intl'
+
+
 
 const shippingAddressDefaultValues =
   process.env.NODE_ENV === 'development'
     ? {
-        fullName: 'Basir',
-        street: '1911, 65 Sherbrooke Est',
-        city: 'Montreal',
-        province: 'Quebec',
-        phone: '4181234567',
-        postalCode: 'H2X 1C4',
-        country: 'Canada',
+        fullName: '',
+        street: '',
+        city: '',
+        province: '',
+        phone: '',
+        postalCode: '',
+        country: '',
       }
     : {
         fullName: '',
@@ -64,6 +67,7 @@ const shippingAddressDefaultValues =
 const CheckoutForm = () => {
   const { toast } = useToast()
   const router = useRouter()
+  const t =  useTranslations('Checkout_form')
   const {
     setting: {
       site,
@@ -155,6 +159,7 @@ const CheckoutForm = () => {
     shippingAddressForm.handleSubmit(onSubmitShippingAddress)()
   }
   const CheckoutSummary = () => (
+    
     <Card>
       <CardContent className='p-4'>
         {!isAddressSelected && (
@@ -163,7 +168,7 @@ const CheckoutForm = () => {
               className='rounded-full w-full'
               onClick={handleSelectShippingAddress}
             >
-              Ship to this address
+              {t('Ship to this address')}
             </Button>
             <p className='text-xs text-center py-2'>
               Choose a shipping address and payment method in order to calculate
@@ -418,7 +423,7 @@ const CheckoutForm = () => {
                           type='submit'
                           className='rounded-full font-bold'
                         >
-                          Ship to this address
+                          {t('Ship to this address')}
                         </Button>
                       </CardFooter>
                     </Card>
