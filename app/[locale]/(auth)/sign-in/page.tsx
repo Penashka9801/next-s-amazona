@@ -1,3 +1,4 @@
+
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
@@ -10,6 +11,8 @@ import CredentialsSignInForm from './credentials-signin-form'
 import { GoogleSignInForm } from './google-signin-form'
 import { Button } from '@/components/ui/button'
 import { getSetting } from '@/lib/actions/setting.actions'
+import { getTranslations } from 'next-intl/server'
+
 
 export const metadata: Metadata = {
   title: 'Sign In',
@@ -30,11 +33,15 @@ export default async function SignInPage(props: {
     return redirect(callbackUrl)
   }
 
+  
+  
+  const t = await getTranslations()
+
   return (
     <div className='w-full'>
       <Card>
         <CardHeader>
-          <CardTitle className='text-2xl'>Sign In</CardTitle>
+          <CardTitle className='text-2xl'>{t('Header.sign in')}</CardTitle>
         </CardHeader>
         <CardContent>
           <div>
