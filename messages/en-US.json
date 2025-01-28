@@ -209,5 +209,47 @@
     "Status": "Status",
     "Actions": "Actions",
     "Details": "Details"
+  },
+  "Checkout" : {
+    "title" : "Checkout"
+  },
+  "Checkout_form" : {
+    "Ship to this address" : "Ship to this address",
+    "shippingNote" : "Choose a shipping address and payment method in order to calculate shipping, handling, and tax",
+    "paymentNote": "Choose a payment method to continue checking out. You'll still have a chance to review and edit your order before it's final.",
+    "PlaceYourOrder" : "Place Your Order",
+    "privacyNotice": "privacy notice",
+    "conditionsOfUse": "conditions of use",
+    "byPlacingOrder": "By placing your order, you agree to",
+    "and": "and",
+    "OrderSummary" : "OrderSummary",
+    "Items" : "Items",
+    "Shipping" : "Shipping & Handling:",
+    "Tax" : "Tax",
+    "OrderTotal" : "Order Total:",
+    "ShippingAddress": "Shipping address",
+    "Change" : "Change",
+    "UsePaymentMethod" : "Use this payment method",
+    "Enter shipping address" : "Enter shipping address",
+    "Your address" : "Your address",
+    "Full Name" : "Full Name",
+    "Address" : "Address",
+    "City" : "City",
+    "Province" : "Province",
+    "Phone number" : "Phone number",
+    "Payment Method" : "Payment Method",
+    "Choose a payment method" : "Choose a payment method",
+    "Items and shipping" : "Items and shipping",
+    "Delivery date" : "Delivery date:",
+    "Review items and shipping" : "Review items and shipping",
+    "Arriving" : "Arriving",
+    "Qty" : "Qty",
+    "Delete" : "Delete",
+    "Choose a shipping speed" : "Choose a shipping speed"
+    
+  },
+  "PaymentMethods" : {
+    "cashPayment" : "Cash Payment"
   }
+
 }

@@ -213,7 +213,42 @@
   "Checkout": {
     "title": "Sargyt sahypa"
   },
-  "Checkout_form" :{
-    "Ship to this address" : "Šu salga ugradyñ"
+  "Checkout_form" : {
+    "Ship to this address" : "Šu salga ugradyñ",
+    "shippingNote": "Eltip bermek salgysyny we töleg usulyny saýlaň, şondan soň eltmegiň, işlenmegiň we harydyn hasabyny alyp bolar",
+    "paymentNote": "Töleg usulyny saýlaň we satyn alşy dowam etdiriň.Sargytlaryňyzy gözden geçirip we redaktirläp bilersiňiz.",
+    "PlaceYourOrder" : "Sargyt et",
+    "privacyNotice": "gizlinlik syýasaty",
+    "conditionsOfUse": "ulanyş şertleri",
+    "byPlacingOrder": "Öz sargydyñyzy goymak bilen siz razy bolyanyz",
+    "and": "we",
+    "OrderSummary" : "Sargydyñ maglumatlary",
+    "Items" : "Jemi harytlar",
+    "Shipping" : "Getirip bermek",
+    "Tax" : "Salgyt",
+    "OrderTotal" : "Sargyt jemi:",
+    "ShippingAddress" : "Eltip bermek salgysy",
+    "Change" : "Üýtget",
+    "UsePaymentMethod" : "Töleg usulyny saýlaň",
+    "Enter shipping address" : "Öy salgyñyzy  ÿazyñ",
+    "Your address" : "Siziñ salgyñyz",
+    "Full Name" : "At Familiÿañyz",
+    "Address" : "Salgyñyz",
+    "City" : "Šäher",
+    "Province" : "Rayon",
+    "Phone number" : "Telefon belgi",
+    "Payment Method" : "Töleg usuly",
+    "Choose a payment method" : "Töleg usulyny saÿlañ",
+    "Items and shipping" : "Jemi harytlar we getirip bermek",
+    "Delivery date" : "Eltip bermek sene:",
+    "Review items and shipping" : "Jemi harytlar we getirip bermek maglumatlary",
+    "Arriving" : "Alyp bolyan wagty",
+    "Qty" : "Sany",
+    "Delete" : "Öçür",
+    "Choose a shipping speed" : "Eltip bermek wagtyny saÿlañ"
+    
+  },
+  "PaymentMethods" : {
+    "cashPayment" : "Nagt Töleg"
   }
 }

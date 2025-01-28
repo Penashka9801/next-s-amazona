@@ -26,13 +26,15 @@ export const AVAILABLE_PAYMENT_METHODS = [
       isDefault: false,
     },
     {
-      name: 'Cash On Delivery',
+      name: 'Nagt Töleg',
+
+      // name: 'Cash On Delivery',
       commission: 0,
       isDefault: true,
     },
   ]
   export const DEFAULT_PAYMENT_METHOD =
-    process.env.DEFAULT_PAYMENT_METHOD || 'Cash On Delivery'
+    process.env.DEFAULT_PAYMENT_METHOD || 'Nagt Töleg'
   
   export const AVAILABLE_DELIVERY_DATES = [
     {

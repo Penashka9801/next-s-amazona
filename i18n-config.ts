@@ -1,9 +1,10 @@
 export const i18n = {
   locales: [
     { code: 'en-US', name: 'English', icon: '🇺🇸' },
-    { code: 'fr', name: 'Français', icon: '🇫🇷' },
-    { code: 'ar', name: 'العربية', icon: '🇸🇦' },
-    { code: 'tkm', name: 'Türkmen', icon: '🇹🇲'}
+    // { code: 'fr', name: 'Français', icon: '🇫🇷' },
+    // { code: 'ar', name: 'العربية', icon: '🇸🇦' },
+    { code: 'tkm', name: 'Türkmen', icon: '🇹🇲'},
+    {code: 'ru', name: "Русский", icon: '🇷🇺'}
   ],
   defaultLocale: 'en-US',
 }

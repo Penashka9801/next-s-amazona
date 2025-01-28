@@ -204,5 +204,12 @@
     "Status": "Statut",
     "Actions": "Actions",
     "Details": "Détails"
+  },
+  "Checkout" : {
+    "title" : "Checkout"
+  },
+  "Checkout_form" : {
+    "Ship to this address" : "Ship to this address",
+    "Choose a shipping address and payment method in order to calculate shipping, handling, and tax" : "Fransuzca birzat sulam"
   }
 }
