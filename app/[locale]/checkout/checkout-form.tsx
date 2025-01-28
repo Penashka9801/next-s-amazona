@@ -24,7 +24,7 @@ import { createOrder } from "@/lib/actions/order.actions";
 import {
   calculateFutureDate,
   formatDateTime,
-  timeUntilMidnight,
+  // timeUntilMidnight,
 } from "@/lib/utils";
 import { ShippingAddressSchema } from "@/lib/validator";
 import { zodResolver } from "@hookform/resolvers/zod";
