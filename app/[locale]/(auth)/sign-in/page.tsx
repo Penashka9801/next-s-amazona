@@ -11,7 +11,7 @@ import CredentialsSignInForm from './credentials-signin-form'
 import { GoogleSignInForm } from './google-signin-form'
 import { Button } from '@/components/ui/button'
 import { getSetting } from '@/lib/actions/setting.actions'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations} from 'next-intl/server'
 
 
 export const metadata: Metadata = {
@@ -53,11 +53,11 @@ export default async function SignInPage(props: {
           </div>
         </CardContent>
       </Card>
-      <SeparatorWithOr>New to {site.name}?</SeparatorWithOr>
+      <SeparatorWithOr>{t('SignIn.New to')} {site.name}?</SeparatorWithOr>
 
       <Link href={`/sign-up?callbackUrl=${encodeURIComponent(callbackUrl)}`}>
         <Button className='w-full' variant='outline'>
-          Create your {site.name} account
+          {t('SignIn.Create your')} {site.name} account
         </Button>
       </Link>
     </div>

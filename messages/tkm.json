@@ -250,5 +250,16 @@
   },
   "PaymentMethods" : {
     "cashPayment" : "Nagt Töleg"
+  },
+  "SignIn" : {
+    "New to" : "Täze",
+    "Create your" : "Gošulmak",
+    "Email" : "E-Mail",
+    "Password" : "Parol",
+    "Sign In" : "Giriš",
+    "byPlacingOrder": "Öz sargydyñyzy goymak bilen siz razy bolyanyz",
+    "and" : "we",
+    "privacyNotice": "gizlinlik syýasaty",
+    "conditionsOfUse": "ulanyş şertleri"
   }
 }

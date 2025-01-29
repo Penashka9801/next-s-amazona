@@ -21,6 +21,10 @@ import { toast } from '@/hooks/use-toast'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { UserSignInSchema } from '@/lib/validator'
 import { isRedirectError } from 'next/dist/client/components/redirect-error'
+import { useTranslations } from "next-intl";
+
+
+
 
 const signInDefaultValues =
   process.env.NODE_ENV === 'development'
@@ -66,6 +70,9 @@ export default function CredentialsSignInForm() {
     }
   }
 
+  const t =  useTranslations("SignIn");
+
+
   return (
     <Form {...form}>
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -76,7 +83,7 @@ export default function CredentialsSignInForm() {
             name='email'
             render={({ field }) => (
               <FormItem className='w-full'>
-                <FormLabel>Email</FormLabel>
+                <FormLabel>{t("Email")}</FormLabel>
                 <FormControl>
                   <Input placeholder='Enter email address' {...field} />
                 </FormControl>
@@ -90,7 +97,7 @@ export default function CredentialsSignInForm() {
             name='password'
             render={({ field }) => (
               <FormItem className='w-full'>
-                <FormLabel>Password</FormLabel>
+                <FormLabel>{t("Password")}</FormLabel>
                 <FormControl>
                   <Input
                     type='password'
@@ -104,12 +111,12 @@ export default function CredentialsSignInForm() {
           />
 
           <div>
-            <Button type='submit'>Sign In</Button>
+            <Button type='submit'>{t("Sign In")}</Button>
           </div>
           <div className='text-sm'>
-            By signing in, you agree to {site.name}&apos;s{' '}
-            <Link href='/page/conditions-of-use'>Conditions of Use</Link> and{' '}
-            <Link href='/page/privacy-policy'>Privacy Notice.</Link>
+            {t("byPlacingOrder")} {site.name}&apos;s{' '}
+            <Link href='/page/conditions-of-use'>{t("conditionsOfUse")}</Link> {t("and")}{' '}
+            <Link href='/page/privacy-policy'>{t("privacyNotice")}.</Link>
           </div>
         </div>
       </form>

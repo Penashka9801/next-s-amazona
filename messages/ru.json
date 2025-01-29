@@ -249,6 +249,17 @@
   },
   "PaymentMethods": {
     "cashPayment": "Оплата наличными"
+  },
+  "SignIn" : {
+    "New to" : "Новый в",
+    "Create your" : "Создать свой",
+    "Email" : "Электронная почта",
+    "Password" : "Пароль",
+    "Sign In" : "Вход",
+    "byPlacingOrder": "Размещая заказ, вы соглашаетесь с",
+    "and" : "и",
+    "privacyNotice": "уведомление о конфиденциальности",
+    "conditionsOfUse": "условия использования"
   }
 }
   
