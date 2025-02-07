@@ -13,6 +13,7 @@ import { getSetting } from '@/lib/actions/setting.actions'
 import { toSlug } from '@/lib/utils'
 import { getTranslations } from 'next-intl/server'
 
+
 export default async function HomePage() {
   const t = await getTranslations('Home')
   const { carousels } = await getSetting()
@@ -41,7 +42,7 @@ export default async function HomePage() {
         image: `/images/${toSlug(category)}.jpg`,
         href: `/search?category=${category}`,
       })),
-    },
+   },
     {
       title: t('Explore New Arrivals'),
       items: newArrivals,

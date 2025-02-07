@@ -39,10 +39,10 @@ export default function Footer() {
             <h3 className='font-bold mb-2'>{t('Footer.Get to Know Us')}</h3>
             <ul className='space-y-2'>
               <li>
-                <Link href='/page/careers'>{t('Footer.Careers')}</Link>
+                {/* <Link href='/page/careers'>{t('Footer.Careers')}</Link> */}
               </li>
               <li>
-                <Link href='/page/blog'>{t('Footer.Blog')}</Link>
+                {/* <Link href='/page/blog'>{t('Footer.Blog')}</Link> */}
               </li>
               <li>
                 <Link href='/page/about-us'>
