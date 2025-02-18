@@ -511,11 +511,7 @@ const products: IProductInput[] = [
     avgRating: 3.85,
     numReviews: 14,
     ratingDistribution: [
-      { rating: 1, count: 0 },
-      { rating: 2, count: 2 },
-      { rating: 3, count: 3 },
-      { rating: 4, count: 4 },
-      { rating: 5, count: 5 },
+      
     ],
     countInStock: 34,
     numSales: 48,
@@ -539,11 +535,7 @@ const products: IProductInput[] = [
     avgRating: 3.66,
     numReviews: 15,
     ratingDistribution: [
-      { rating: 1, count: 1 },
-      { rating: 2, count: 2 },
-      { rating: 3, count: 3 },
-      { rating: 4, count: 4 },
-      { rating: 5, count: 5 },
+      
     ],
     countInStock: 35,
     numSales: 48,
@@ -567,11 +559,7 @@ const products: IProductInput[] = [
     avgRating: 3.46,
     numReviews: 13,
     ratingDistribution: [
-      { rating: 1, count: 1 },
-      { rating: 2, count: 2 },
-      { rating: 3, count: 3 },
-      { rating: 4, count: 4 },
-      { rating: 5, count: 3 },
+     
     ],
     countInStock: 36,
     numSales: 49,
@@ -596,11 +584,7 @@ const products: IProductInput[] = [
     avgRating: 4.71,
     numReviews: 7,
     ratingDistribution: [
-      { rating: 1, count: 0 },
-      { rating: 2, count: 0 },
-      { rating: 3, count: 0 },
-      { rating: 4, count: 2 },
-      { rating: 5, count: 5 },
+      
     ],
     countInStock: 41,
     numSales: 48,
@@ -626,11 +610,7 @@ const products: IProductInput[] = [
     avgRating: 4.2,
     numReviews: 10,
     ratingDistribution: [
-      { rating: 1, count: 1 },
-      { rating: 2, count: 0 },
-      { rating: 3, count: 0 },
-      { rating: 4, count: 4 },
-      { rating: 5, count: 5 },
+    
     ],
     countInStock: 42,
     numSales: 50,
@@ -656,11 +636,7 @@ const products: IProductInput[] = [
     avgRating: 4,
     numReviews: 12,
     ratingDistribution: [
-      { rating: 1, count: 1 },
-      { rating: 2, count: 0 },
-      { rating: 3, count: 2 },
-      { rating: 4, count: 4 },
-      { rating: 5, count: 5 },
+     
     ],
     countInStock: 43,
     numSales: 72,
@@ -686,11 +662,7 @@ const products: IProductInput[] = [
     avgRating: 3.85,
     numReviews: 14,
     ratingDistribution: [
-      { rating: 1, count: 0 },
-      { rating: 2, count: 2 },
-      { rating: 3, count: 3 },
-      { rating: 4, count: 4 },
-      { rating: 5, count: 5 },
+      
     ],
     countInStock: 44,
     numSales: 72,
@@ -714,11 +686,7 @@ const products: IProductInput[] = [
     avgRating: 3.66,
     numReviews: 15,
     ratingDistribution: [
-      { rating: 1, count: 1 },
-      { rating: 2, count: 2 },
-      { rating: 3, count: 3 },
-      { rating: 4, count: 4 },
-      { rating: 5, count: 5 },
+     
     ],
     countInStock: 45,
     numSales: 64,
@@ -744,11 +712,7 @@ const products: IProductInput[] = [
     avgRating: 3.46,
     numReviews: 13,
     ratingDistribution: [
-      { rating: 1, count: 1 },
-      { rating: 2, count: 2 },
-      { rating: 3, count: 3 },
-      { rating: 4, count: 4 },
-      { rating: 5, count: 3 },
+      
     ],
     countInStock: 46,
     numSales: 48,
@@ -774,11 +738,31 @@ const products: IProductInput[] = [
     avgRating: 4.71,
     numReviews: 7,
     ratingDistribution: [
-      { rating: 1, count: 0 },
-      { rating: 2, count: 0 },
-      { rating: 3, count: 0 },
-      { rating: 4, count: 2 },
-      { rating: 5, count: 5 },
+     
+    ],
+    numSales: 9,
+    countInStock: 11,
+    description:
+      'Made with chemicals safer for human health and the environment',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    colors: ['Green', 'Red', 'Black'],
+
+    reviews: [],
+  },
+
+  {
+    name: 'Iphone 16 pro max',
+    slug: toSlug('iphone 16 pro max'),
+    category: 'apple',
+    images: ['/images/apple.png', ],
+    tags: ['new-arrival'],
+    isPublished: true,
+    price: 21.8,
+    listPrice: 0,
+    brand: 'Apple',
+    avgRating: 4.71,
+    numReviews: 7,
+    ratingDistribution: [
     ],
     numSales: 9,
     countInStock: 11,
